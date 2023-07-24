@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  sql:
+    init:
+      mode: always
+      platform: h2
+
+  datasource:
+    url: jdbc:h2:mem:development;MODE=MYSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+  h2:
+     console:
+       enabled: true
+       path: /h2-console
+
+
+
+### show -sql : 실행하게 될 sql 구문들을 콘솔에서 확인 가능
+### hibernate: ddl-auto -> hibernate 를 사용하여 db 스키마 생성하는 방법을 제어 (스키마 변경하지 않게 된다)
+### database-platform : 사용할 데이터베이스 플랫폼 지정하는 방법
+### sql : init :mode : 초기 sql 스크립트를 실행해주겠다
+
+### datasource url : 스키마는 development 모드는 mysql로

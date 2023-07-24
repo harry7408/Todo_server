@@ -1,0 +1,5 @@
+INSERT INTO TASK (`TITLE`,`DESCRIPTION`,`STATUS`,`DUE_DATE`)
+    VALUES ('take Class','CH01 finish','IN_PROGRESS',now()+1);
+
+INSERT INTO TASK (`TITLE`,`DESCRIPTION`,`STATUS`,`DUE_DATE`)
+    VALUES ('take Class2','CH02 finish','TODO',now()+2);
